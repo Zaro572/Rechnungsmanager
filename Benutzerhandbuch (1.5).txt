@@ -1,0 +1,166 @@
+Rechnungsmanager Benutzerhandbuch
+Die Informationen in diesem Dokument gelten für Version 1.5 von Rechnungsmanager und unterscheiden sich möglicherweise von älteren oder neueren Versionen.
+Index:
+⦁	Index
+⦁	Kapitel 1: Einführung
+⦁	Kapitel 2: Erste Nutzung
+⦁	Kapitel 3: UI Elemente
+⦁	Kapitel 4: Rechnungen
+⦁	Kapitel 5: Datensätze
+⦁	Kapitel 6: Erweiterte Funktionen
+⦁	Kapitel 7: Tastaturkürzel
+⦁	Kapitel 8: Technische Details
+
+Kapitel 1: Einführung
+Rechnungsmanager ist Rechnungsmanager ist ein Büroprogramm, das von Open-Source Programmierer Zaro Kavelar in der C# Programmiersprache entwickelt wurde. Die erste Version erschien im Jahre 2022 und diente als Rechnungsverwaltungsprogramm für private Nutzung. Entwickelt wurde das Programm mit Microsoft Visual Studio.
+
+Kapitel 2: Erste Nutzung
+Bevor das Programm angewandt werden kann muss erst ein Datensatz erstellt werden.
+Image
+Oben sehen Sie das Fenster, dass Sie beim ersten Ausführen des Programms sehen. Wählen Sie Neuer Datensatz um einen neuen Datensatz zu erstellen. Um einen Datensatz zu importieren, wählen Sie Daten Importieren. Dies ist in Kapitel 4 ausführlich beschrieben.
+Image
+Wenn Sie zur Bestätigung aufgefordert werden, wählen Sie Ja.
+Image
+Wählen Sie OK.
+
+Kapitel 3: UI Elemente
+UI Elemente auf der Startseite:
+ 
+
+
+Kapitel 4: Rechnungen
+Rechnungsmanagement ist die Kernfunktion des Programms und wird in diesem Kapitel genau beschrieben.
+Eine neue Rechnung Erstellen:
+Es gibt Mehrere Methoden eine neue Rechnung zu erstellen.
+Methode 1: Wählen Sie Neu.
+Methode 2: Wählen Sie Manager in der Menüleiste, wählen Sie dann Neue Rechnung.
+Methode 3: Klicken Sie auf das entsprechend Symbol in der Schnellzugriffsleiste.
+Methode 4: Benutzen Sie die Tastenkombination Strg+N.
+Image
+Es erscheint ein neues Fenster.
+ 
+In das erste Textfeld schreiben Sie den Namen der Rechnung. Dieser Name wird später in der Rechnungsliste angezeigt. Der Name darft Groß- und Kleinbuchstaben, Zahlen, Leerzeichen und die Meisten Sonderzeichen enthalten - alle Zeichen die in einem Dateinamen enthalten sein dürfen. Zwei Rechnungen dürfen nicht den gleichen Namen haben. Diese limitationen treffen nicht für den rest der Eingabefelden zu.
+Das zweite Textfeld enthält eine einzigartige fortlaufende Rechnungsnummer (ID). Die ID wird automatisch eingefügt und kann nicht verändert werden.
+In das dritte Textfeld enthält den Namen des Authors der Rechnung und das vierte Textfeld enthält den Kundennamen.
+In das fünfte Textfeld enthält eine mehrzeilige Beschreibung mit details über die Rechnung.
+Keines der Textfelder darf leer bleiben.
+Um die Rechnung zu erstellen, kilcken Sie auf Erstellen.
+ 
+ 
+Eine Rechnung öffnen:
+Geben Sie den Namen der Rechnung in das Eingabefeld ein, klicken Sie dann auf Öffnen.
+ 
+ 
+Angezeigt werden Name, ID-Nummer, Author, Kunde, Beschreibung, sowie die Zeit an der die Rechnung erstellt wurde.
+Eine Rechnung löschen:
+Es gibt mehrere Methoden eine Rechnung zu löschen.
+Methode 1: Geben Sie den Namen der Rechnung in das Eingabefeld ein, klicken Sie dann auf Löschen.
+Methode 2: Geben Sie den Namen der Rechnung in das Eingabefeld ein, klicken Sie dann auf Öffnen. Klicken Sie im neuen Fenster in der Menüleiste auf Datei und dann auf Löschen.
+ 
+Vor dem Löschen werden Sie um Bestätigung gefragt.
+ 
+Eine Rechnung drucken
+Es gibt mehrere Methoden eine Rechnung zu löschen.
+Methode 1: Geben Sie den Namen der Rechnung in das Eingabefeld ein, klicken Sie dann auf Drucken.
+Methode 2: Geben Sie den Namen der Rechnung in das Eingabefeld ein, klicken Sie dann auf Öffnen. Klicken Sie im neuen Fenster in der Menüleiste auf Datei und dann auf Drucken.
+ 
+Sie werden nun aufgefordert eines von zwei Designs zu wählen.
+ 
+Klicken Sie auf Vorschau um zu sehen, wie das gedruckte Dokument aussehen würde.
+ 
+Schließen Sie die Druckvorschau und wählen Sie Drucken. Folgen Sie weiteren Schritten.
+Kapitel 5: Datensätze
+Ein Datensatz beschreibt alle Daten die vom Rechnungsmanager erzeugt werden. Dazu gehören: Rechnungen, die Indexdatei (mehr dazu in Kapitel 7) und Einstellungsdateien.
+Datensätze können archiviert, importiert und gelöscht werden.
+Datensatz archivieren
+Es gibt mehrere Methoden um einen Datensatz zu archivieren.
+Methode 1: Wählen Sie zunächst Manager in der Menüleiste. Wählen Sie dann Datensatz und schließlich Datensatz Archivieren.
+Methode 2: Klicken Sie auf das entsprechend Symbol in der Schnellzugriffsleiste.
+Methode 3: Benutzen Sie die Tastenkombination Strg+R.
+ 
+Sie werden nun um Bestätigung gerfragt. Wählen Sie Ja.
+ 
+Wählen Sie einer Speicherort sowie einen Name für das neue Archiv.
+ 
+Eine ZIP-Datei wird gespeichert die den Datensatz enthält. Diese Datei nicht modifizieren.
+Datensatz löschen
+Um den Datensatz zu löschen, wählen Sie Manager in der Menüleiste. Wählen Sie Datensatz und Datensatz löschen.
+ 
+Sie werden jetzt um Bestätigung gefragt. Sie haben auch die Möglichkeit ein Backuparchiv zu erstellen.
+ 
+Fahren Sie fort, werden Sie erneut um Bestätigung gerfagt.
+ 
+Nachdem der Datensatz gelöscht wurde, wird das Programm beendet.
+ 
+Datensatz importieren
+Wenn kein Datensatz vorhanden ist kann ein Archiv importiert werden.
+ 
+Wählen Sie ein Archiv (ZIP-Datei).
+ 
+Der Datensatz wurde importiert.
+ 
+Integrität eines Datensatzes prüfen
+Probleme mit Rechnungsmanager? Überprüfen Sie die Integrität des Datensatzes. Der Integritätscheck prüft den Datensatz auf mögliche Probleme und bietet Ihnen potenzielle Lösungen an.
+Es gibt mehrere Methoden um die Integrität eines Datensatzes zu prüfen.
+Methode 1: Wählen Sie zunächst Manager in der Menüleiste. Wählen Sie dann Datensatz und schließlich Integrität des Datensatzes prüfen.
+Methode 2: Wählen Sie zunächst Hilfe in der Menüleiste. Wählen Sie dann Problembehandlung und schließlich Integrität des Datensatzes prüfen.
+ 
+Nachdem sich ein neues Fenster öffnet, klicken Sie Prüfen.
+ 
+In der Problembehandlung wird eine Ausgabekonsole sowie eine Fortschrittsanzeige angezeigt um den Verlauf der Checks mitzuverfolgen. Meist dauert der Check jedoch wengier als eine Sekunde.
+ 
+
+Nach dem Scan werden erkannte Probleme und mögliche Lösungsvorschläge angezeigt. Idealerweise sieht das Ergebnis wie im oben gezeigten Beispiel aus.
+Nach dem Integritätscheck, wählen Sie neu Prüfen um den Check erneut durchzuführen, Resultate anzeigen um das Ergebnis des letzten Checks anzuzeigen oder Fertiggstellen um die Problembehandlung erneut zu öffnen.
+ 
+Kapitel 6: Erweiterte Funktionen
+Die Einstellungen 
+sind ein wichtiger Teil des Rechnungsmanagers und erlauben es Ihnen u.a. vorgeschriebene Texte festzulegen.
+Es gibt mehrere Methoden um die Einstellungen zu öffnen.
+Methode 1: Wählen Sie zunächst Manager in der Menüleiste. Wählen Sie Einstellungen.
+Methode 2: Klicken Sie auf das entsprechend Symbol in der Schnellzugriffsleiste.
+Methode 3: Benutzen Sie die Tastenkombination Strg+E.
+ 
+Wenn die Einstellungen zum ersten Mal geöffnet werden, fragt Sie das Programm, ob Sie eine Einstellungsdatei erstellen möchten. Wählen Sie Ja um fortzufahren.
+ 
+In den Einstellungen können Sie vorgeschriebene Texte festlegen die beim Erstellen einer neuen Rechnung automatisch angeschrieben sein werden.
+ 
+Um die Einstellungen zu speichern, wählen Sie Speichern. Um abzubrechen, wählen Sie Abbrechen.
+Extras sind Dienstprogramme die nicht dem verwalten von Rechnungen oder Datensätzen dienen, sondern die zusätzliche Funktionen bereitstellen.
+Notizen ist ein digitaler Notizzettel um temporär Informationen darauf zu vermerken.
+Kalender erlaubt es dir, durch einen virtuellen Kalender zu navigieren.
+Die Extras können durch den Extras Tab in der Menüleiste abgerufen werden.
+ 
+Kapitel 7: Tastenkürzel
+Tastenkürzel dienen der erleichterten Bedienung des Programmes. Die Tastenkürzel werden neben dem entsprechendem Menüleistenelement angezeigt.
+Liste der Tastenkürzel auf der Startseite:
+⦁	Strg+L - Neu Laden
+⦁	Strg+N - Neue Rechnung
+⦁	Strg+R - Datensatz Archivieren
+⦁	Strg+E - Einstellungen
+
+Kapitel 8: Technische Details
+Aufbau des Datensatzes
+Ein Datensatz ist im data Verzeichnid gespeichert. Dieses Verzeichnis befindet sich im Installationsverzeichnis des Programmes.
+ 
+Installierte Dateien
+Diese Dateien werden benötigt um das Programm zu verwenden. 
+Kerndateien
+Bill Manager.exe
+clrcompression.dll
+clrjit.dll
+coreclr.dll
+D3DCompiler_47_cor3.dll
+mscordaccore.dll
+Penlmc_cor3.dll
+PresentationNative_cor3.dll
+vcruntime140_cor3.dll
+wpfgfx_cor3.dll
+Andere Dateien
+archive_make.wav
+bill_create.wav
+bill_delete.wav
+bill_open.wav
+error.png
+manual.pdf
+Kerndateien werden benötigt um das Programm auszuführen. Andere Dateien werden für zusätzliche Inhalte benötigt.
